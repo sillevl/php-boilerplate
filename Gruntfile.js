@@ -4,7 +4,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
         phpcs: {
             application: {
-                src: ['index.php', 'lib/**/*.php']
+                src: ['index.php', 'src/**/*.php']
             },
             options: {
                 bin: 'phpcs',
@@ -13,16 +13,16 @@ module.exports = function(grunt) {
         },
         watch: {
             scripts: {
-                files: ['index.php', 'lib/**/*.php'],
+                files: ['index.php', 'src/**/*.php'],
                 tasks: ['phpcs']
             },
             sass: {
-                files: ['src/scss/**/*.scss'],
-                tasks: ['sass']
+                files: ['assets/scss/**/*.scss'],
+                tasks: ['css']
             },
             scripts: {
-                files: ['src/scss/**/*.js'],
-                tasks: ['concat']
+                files: ['assets/js/**/*.js'],
+                tasks: ['js']
             }
         },
         sass: {
@@ -75,5 +75,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
 
-    grunt.registerTask('default', ['sass', 'concat', 'uglify', 'cssmin']);
+    grunt.registerTask('css', ['sass', 'cssmin']);
+    grunt.registerTask('js', ['concat', 'uglify']);
+    grunt.registerTask('php', ['phpcs']);
+    grunt.registerTask('assets', ['css', 'js']);
+    grunt.registerTask('default', ['watch']);
 };
