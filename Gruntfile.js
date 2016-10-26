@@ -48,12 +48,18 @@ module.exports = function(grunt) {
         },
         uglify: {
             my_target: {
+                options: {
+                    sourceMap: true
+                },
                 files: {
                     'js/app.min.js': ['js/app.js']
                 }
             }
         },
         cssmin: {
+            options: {
+                sourceMap: true
+            },
             target: {
                 files: {
                     'css/app.css.min': ['css/app.css']
