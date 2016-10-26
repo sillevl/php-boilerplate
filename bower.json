@@ -1,0 +1,24 @@
+{
+  "name": "php-boilerplate",
+  "description": "Boilerplate project for PHP with Grunt tasks, Foundation framework and SASS",
+  "main": "index.php",
+  "authors": [
+    "Sille Van Landschoot <info@sillevl.be>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "php",
+    "boilerplate",
+    "grunt",
+    "foundation",
+    "sass"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
