@@ -1,0 +1,26 @@
+{
+  "name": "php-boilerplate",
+  "version": "0.1.0",
+  "description": "Boilerplate project for PHP with Grunt tasks, Foundation framework and SASS",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sillevl/php-boilerplate.git"
+  },
+  "keywords": [
+    "php",
+    "boilerplate",
+    "grunt",
+    "foundation",
+    "sass"
+  ],
+  "author": "Sille Van Landschoot <info@sillevl.be>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sillevl/php-boilerplate/issues"
+  },
+  "homepage": "https://github.com/sillevl/php-boilerplate#readme"
+}
