@@ -52,6 +52,13 @@ module.exports = function(grunt) {
                     'js/app.min.js': ['js/app.js']
                 }
             }
+        },
+        cssmin: {
+            target: {
+                files: {
+                    'css/app.css.min': ['css/app.css']
+                }
+            }
         }
     });
 
@@ -60,6 +67,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
 
-    grunt.registerTask('default', ['sass', 'concat', 'uglify']);
+    grunt.registerTask('default', ['sass', 'concat', 'uglify', 'cssmin']);
 };
