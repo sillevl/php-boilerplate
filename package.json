@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/sillevl/php-boilerplate#readme",
   "devDependencies": {
+    "grunt": "^1.0.1",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-phpcs": "^0.4.0",
