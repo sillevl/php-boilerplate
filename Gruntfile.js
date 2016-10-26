@@ -45,6 +45,13 @@ module.exports = function(grunt) {
                 ],
                 dest: 'js/app.js',
             },
+        },
+        uglify: {
+            my_target: {
+                files: {
+                    'js/app.min.js': ['js/app.js']
+                }
+            }
         }
     });
 
@@ -52,6 +59,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
 
-    grunt.registerTask('default', ['sass', 'concat']);
+    grunt.registerTask('default', ['sass', 'concat', 'uglify']);
 };
