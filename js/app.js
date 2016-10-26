@@ -9128,3 +9128,5 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   Foundation.plugin(Tooltip, 'Tooltip');
 }(jQuery);
 // // Main application js file, put your custom js code here.
+
+$(document).foundation();
